@@ -7,11 +7,10 @@ Write a function (do not create an async function, use the regular function\
         returns a asyncio.Task.
 '''
 import asyncio
-from typing import Type
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int) -> Type[asyncio.Task]:
+def task_wait_random(max_delay: int) -> asyncio.Task:
     '''
     returns a asyncio.Task
     '''
