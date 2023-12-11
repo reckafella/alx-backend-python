@@ -7,9 +7,10 @@ The coroutine will loop 10 times, each time asynchronously wait 1 second,\
 '''
 import asyncio
 from random import uniform
+from typing import AsyncGenerator
 
 
-async def async_generator() -> float:
+async def async_generator() -> AsyncGenerator[float, None]:
     '''
     loops 10 times and each time sleep for 1 second and then yield a random\
         number from 0-10
