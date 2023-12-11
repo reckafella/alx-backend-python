@@ -9,7 +9,7 @@ import asyncio
 from typing import List
 
 
-async def wait_n(n: int, max_delay) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     '''
     function will spawn wait_random n times with the specified max_delay.
     '''
